@@ -52,8 +52,15 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about" class="page-scroll">O mně</a></li>
-        <li><a href="#services" class="page-scroll">Služby</a></li>
-        <li><a href="#rental" class="page-scroll">Půjčovna</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Služby <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#services">Všechny služby</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#earth-moving" class="page-scroll">Zemní práce</a></li>
+            <li><a href="#road-transport" class="page-scroll">Autodoprava</a></li>
+            <li><a href="#rental" class="page-scroll">Půjčovna</a></li>
+          </ul>
         <li><a href="#testimonials" class="page-scroll">Hodnocení</a></li>
         <li><a href="#contact" class="page-scroll">Kontakt</a></li>
       </ul>
@@ -143,7 +150,7 @@
 
     
     <div class="row">
-      <div class="col-md-4 col-md-offset-2 text-center">
+      <div class="col-md-4 text-center">
         <div class="service-media"> <img src="img/services/service-3.jpg" alt=" "> </div>
         <div class="service-desc">
           <h3>Půjčovna</h3>
@@ -157,6 +164,52 @@
           <p>Neváhejte mne kontaktovat, potřebuje-li vykopat základy drobných staveb, bazén, rybník, jezírko, jímku, odvodňovací rýhu, drenáž nebo srovnat či jinak upravit terén.</p>
         </div>
       </div>
+      <div class="col-md-4 text-center">
+        <div class="service-media"> <img src="img/services/service-6.jpg" alt=" "> </div>
+        <div class="service-desc">
+          <h3>Autodoprava</h3>
+          <p>Potřebujete odvézt suť či hlínu nebo přivézt písek, štěrk nebo třeba dřevo na zimu? Žádný problém.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Earth moving Section -->
+<div id="earth-moving">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>Výkopové a terénní práce</h2>
+      <hr>
+      <p>Provádím výkopové a terénní práce.</p>
+    </div>
+    <div class="row text-center">
+      <div class="col-xs-12 col-md-12"></div>
+        <p>
+          Chcete upravit či svažit terén?<br>
+          Chytáte se stavět garáž, pergolu, plot nebo jinou stavbu, jež se neobejde bez základů?<br>
+          Rádi byste si užili léto u bazénu či jezírka na svojí vlastní zahradě?<br>
+          Potřebujete vykopat jímku, odvodňovací rýhu, drenáž…?<br>
+          Anebo naopak potřebuje nějakou díru zasypat?
+        <p>
+          Pak mě neváhejte <a href="#contact">kontaktovat</a>.
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Road transport Section -->
+<div id="road-transport">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>Autodoprava</h2>
+      <hr>
+      <p>Vlastním nákladní automobil s kontejnerem.
+    </div>
+    <div class="row text-center">
+      <div class="col-xs-12 col-md-12">
+        <p>Přivezu nebo odvezu, na co si vzpomenete: písek, drť, beton dřevo…
+        <p>Přistavím kontejner k odvozu suti, hlíny i jiného komunálního odpadu.<br>
+          Následně jej vyzvednu a odvezu k uložení na řízenou skládku nebo kamkoliv dle domluvy.
+      </div>
     </div>
   </div>
 </div>
@@ -168,21 +221,6 @@
       <hr>
       <p>Nabízím zapůjčení následující zahradní techniky:</p>
     </div>
-    <!--
-    <div class="categories">
-      <ul class="cat">
-        <li>
-          <ol class="type">
-            <li><a href="#" data-filter="*" class="active">All</a></li>
-            <li><a href="#" data-filter=".lawn">Lawn Care</a></li>
-            <li><a href="#" data-filter=".garden">Garden Care</a></li>
-            <li><a href="#" data-filter=".planting">Planting</a></li>
-          </ol>
-        </li>
-      </ul>
-      <div class="clearfix"></div>
-    </div>
-    -->
     <div class="row">
         <div class="col-sm-6 col-md-4">
           <div class="portfolio-item">
@@ -287,6 +325,7 @@
     </div>
   </div>
 </div>
+
 <!-- Testimonials Section -->
 <div id="testimonials" class="text-center">
   <div class="overlay">

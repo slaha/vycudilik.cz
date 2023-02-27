@@ -119,6 +119,12 @@ hr {
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #6aaf08;
 }
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover {
+	background-color: transparent;
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+	background-color: #6aaf08;
+}
 .section-title {
 	margin-bottom: 70px;
 }
@@ -273,8 +279,28 @@ header .intro-text {
 #services hr {
 	background: rgba(255,255,255,0.6);
 }
-/* Portfolio Section */
-#rental {
+/* Road transport Section */
+#road-transport {
+	padding: 120px 0;
+	background: #6aaf08;
+}
+#road-transport h2 {
+	color: #fff;
+}
+#road-transport h3 {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 400;
+	padding: 5px 0;
+}
+#road-transport p {
+	color: rgba(255,255,255,0.9);
+}
+#road-transport hr {
+	background: rgba(255,255,255,0.6);
+}
+/* Rental and earth moving sections */
+#rental, #earth-moving {
 	padding: 100px 0;
 	background: #f6f6f6;
 }

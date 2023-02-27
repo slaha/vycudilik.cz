@@ -38,7 +38,12 @@ function main() {
     // check if window is small enough so dropdown is created
     var toggle = $(".navbar-toggle").is(":visible");
     if (toggle) {
-      $(".navbar-collapse").collapse('hide');
+      var isDropdown = this.classList.contains("dropdown-toggle");
+      if (!isDropdown) {
+        $(".navbar-collapse").collapse('hide');
+      }
+    } else {
+      $(".dropdown").removeClass('open');
     }
   });
 	
