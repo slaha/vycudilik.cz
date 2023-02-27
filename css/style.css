@@ -122,8 +122,24 @@ hr {
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover {
 	background-color: transparent;
 }
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+	color: #6aaf08 !important;
+	background-color: transparent;
+}	
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
 	background-color: #6aaf08;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+	color: white;
+	background-color: #6aaf08;
+}
+@media (max-width: 767px) {
+  #bs-example-navbar-collapse-1 {
+    background-color: #333;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+	color: #ddddddb0;
+  }
 }
 .section-title {
 	margin-bottom: 70px;
