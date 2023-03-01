@@ -33,6 +33,18 @@ function main() {
         offset: 80
     });
 
+  // Show services submenu on small screens when one of services is selected
+  if ($(".navbar-toggle").is(":visible")) {
+    $(".navbar-toggle").click(function (event) {
+      var active = $("#services-dropdown-menu").find('li.active').length !== 0
+      if (active) {
+        setTimeout(() => {
+          $("#services-dropdown-toggle").click()
+        }, 100);
+      }  
+    });
+  }
+
 	// Hide nav on click
   $(".navbar-nav li a").click(function (event) {
     // check if window is small enough so dropdown is created
