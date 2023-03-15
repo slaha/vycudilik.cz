@@ -427,36 +427,31 @@
       <div class="col-md-6">
         <h3>Napište mi</h3>
         <hr>
-        <form class="gform" name="sentMessage" id="contactForm" action="https://script.google.com/macros/s/AKfycby6254l4S_mx09vQOG1NxlRBW19U5k_RCsTeN2YSaqdgOgwTQ-VWlPoZ8_vibG3AHdS/exec" method="POST" novalidate>
+        <form class="gform" name="sentMessage" id="contactForm" action="https://formsubmit.co/couda300@seznam.cz" method="POST" />
           <div class="form-elements">
             
             <div class="form-group">
               <input type="text" name="name" id="name" class="form-control" placeholder="Vaše jméno" required="required">
-              <p class="help-block text-danger"></p>
             </div>
            
             <div class="form-group">
               <input type="email" name="email" id="email" class="form-control" placeholder="Váš e-mail" required="required">
-              <p class="help-block text-danger"></p>
             </div>
 
-            <div class="form-group honeypot-field">
-              <input id="honeypot" type="text" name="honeypot" value="" />
-              <p class="help-block text-danger"></p>
-            </div>
+            <input type="hidden" name="_next" value="http://vycudilik.cz?email-sent">
+            <input type="hidden" name="_autoresponse" value="Děkuji, váš e-mail byl úspěšně odeslán a budu se mu věnovat co možná nejdříve. Libor Vycudilík">
+            <input type="text" name="_honey" style="display:none">
 
             <div class="form-group">
               <textarea name="message" id="message" class="form-control" rows="4" placeholder="Zpráva" required></textarea>
-              <p class="help-block text-danger"></p>
             </div>
-            <div id="success"></div>
-              <button type="submit" class="btn btn-custom btn-lg">Odeslat</button>
+            <button type="submit" class="btn btn-custom btn-lg">Odeslat</button>
           </div>
-          <div style="display:none" class="thankyou_message alert alert-success">
-            <!-- You can customize the thankyou message by editing the code below -->
-            <em>Děkuji</em>, e-mail byl úspěšně odeslán.
-          </div> 
         </form>
+        <div id="email-sent" style="display:none" class="thankyou_message alert alert-success">
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <em>Děkuji</em>, e-mail byl úspěšně odeslán.
+        </div> 
       </div>
     </div>
   </div>
@@ -478,7 +473,6 @@
     </div>
   </div>
 </div>
-<script data-cfasync="false" type="text/javascript" src="js/mail.js"></script>
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
 <script type="text/javascript" src="js/bootstrap.js"></script> 
 <script type="text/javascript" src="js/SmoothScroll.js"></script> 
@@ -487,5 +481,6 @@
 <script type="text/javascript" src="js/owl.carousel.js"></script> 
 <script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/mail.js"></script>
 </body>
 </html>
